@@ -1,0 +1,29 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+    header p{
+        text-align: center;
+
+    }
+
+    section p{
+        text-align: center;
+    }
+
+    section p{
+        text-align: center;
+    }
+
+    div p{
+        text-align: center;
+        
+    }
+
+    div{
+        border: 1px black;
+    }
+
+    .intro{
+        background-color: red;
+    }

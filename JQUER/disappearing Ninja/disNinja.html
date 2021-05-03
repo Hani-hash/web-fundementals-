@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="disNinja.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $("img").click(function(){
+                    $(this).hide("slow");
+                })
+                $(".first").click(function(){
+                    $("img").show();
+                })
+            });
+        </script>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="body">
+                <section>
+                    <img src="kitten1.jpg" alt="">
+                    <img src="kitten1.jpg" alt="">
+                    <img src="kitten1.jpg" alt="">
+                    <img src="kitten1.jpg" alt="">
+                </section>
+                <section id="a">
+                    <img src="kitten1.jpg" alt="">
+                    <img src="kitten1.jpg" alt="">
+                    <img src="kitten1.jpg" alt="">
+                    <img src="kitten1.jpg" alt="">
+                </section>
+                <section id="b">
+                    <button type="button" class="first">restore</button>
+                </section>
+        </div>
+
+
+    </div>
+</body>
+</html>

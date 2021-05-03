@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hoverin&out.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>hover in & out</title>
+    <script>
+        $(document).ready(function(){
+            $("img").hover(function(){
+                var temp=$(this).attr("src")
+                $(this).attr("src",$(this).attr("data-alt-src"))
+                $(this).attr("data-alt-src",temp)
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <img src="sd.jpg" data-alt-src='sd1.jpg'> 
+            <img src="sd2.jpg" data-alt-src='sd1.jpg'> 
+            <img src="sd3.jpg" data-alt-src='sd2.jpg'> 
+            <img src="sd2.jpg" data-alt-src='sd1.jpg'> 
+            
+            
+        </section>
+        
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="JQuery.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $("button.first").click(function(){
+            $("p:first").addClass("intro");});
+            $("p:first").click(function(){
+            $(this).removeClass("intro")
+            });
+            
+            
+            $("button.second").click(function(){
+            $(".mm").slideToggle();});
+
+            $("button.third").click(function(){
+            $("p.third").append("<b>Hani</b>");});
+
+            $("p.fourth").click(function(){
+             alert("The paragraph was clicked.");});
+
+            $("button.fifth").click(function(){
+            $("p.fifth").hide(); });
+            
+            $("button.fifthh").click(function(){
+            $("p.fifth").show();});
+
+            $("button.sixth").click(function(){
+            $("p.sixth").toggle();});
+             
+            $("button.seventhh").click(function(){
+            $("p.seventh").slideUp();});
+            $("button.seventh").click(function(){
+            $("p.seventh").slideDown();});
+
+            $("button.eighth1").click(function(){
+            $("p.eighth").fadeIn();});
+            $("button.eighth2").click(function(){
+            $("p.eighth").fadeOut();});
+             
+            $("button.nineth1").click(function(){
+            $("p.nineth").before("Hello world!");});
+            $("button.nineth2").click(function(){
+            $("p.nineth").after("Hello world!");});
+
+
+            $("button.tenth").click(function(){
+            $("p.tenth").html("Hani<b>khamees</b>!");
+              });
+
+            $("button.eleventh").click(function(){
+            $("img").attr("width","500"); });
+                
+            $("button").click(function(){
+            $("input:text").val("Hani Khamees");});
+                
+
+        });
+
+        
+     </script>
+     </head>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AddClass</h1>
+            <p class="first">click the button to add class 'red' to this paragraph</p>
+            <button type="button" class="first" >add class</button><br><br>
+            <hr size="30">
+            </header>
+
+            <section>
+                <h2>SlideToggle</h2>
+                <p class="mm">click the button to slidetoggle a hidden image</p>
+                <button type="button" class="second">SlideToggle</button><br><br>
+                <hr size="30">
+            </section>
+
+            <section>
+                <h2>Append</h2>
+                <p class="third">click the button to appened a new paragraph</p>
+                <button type="button" class="third">append</button><br><br>
+                <hr size="30">
+            </section>
+
+            <div>
+                <h2>click</h2>
+                <p class="fourth">click the button</p>
+                <button type="button">click</button><br><br>
+                <hr size="30">
+            </div>
+
+            <div>
+                <h2>hide</h2>
+                <p class="fifth">click to hide</p>
+                <button type="button" class="fifth">hide</button><br><br><button type="button"  class="fifthh">show</button>
+                <hr size="30">
+            </div>
+
+            
+
+            <div>
+                <h2>toggle</h2>
+                <p class="sixth" >click to toggle</p>
+                <button type="button" class="sixth">toggle</button><br><br>
+                <hr size="30">
+            </div>
+
+            <div>
+                <h2>slide down</h2>
+                <p class="seventh">click to slide down</p>
+                <button type="button" class="seventhh">slide up</button><br><br><button type="button" class="seventh">slide down</button><br><br>
+                <hr size="30">
+            </div>
+
+            
+
+            <div>
+                <h2>FADE IN & FADE OUT</h2>
+                <p class="eighth">click to to fade in fade out</p>
+                <button type="button" class="eighth1">fadeIn</button><br><br><button type="button" class="eighth2">fadeOut</button>
+                <hr size="30">
+            </div>
+            <div>
+                <h2>Before / After</h2>
+                <p class="nineth">click to print before and after</p>
+                <br><br><button type="button" class="nineth1">before</button><br><br><button type="button" class="nineth2">after</button>
+                <hr size="30">
+            </div>
+
+            <div>
+                <h2>Html</h2>
+                <p class="tenth">Hello World</p>
+                <button type="button" class="tenth">show</button><br><br>
+                <hr size="30">
+            </div>
+
+            <div>
+                <h2>attr</h2>
+                <img src="https://cloudfour.com/examples/img-currentsrc/images/kitten-large.png" alt="Pulpit Rock" width="284" height="213"><br>
+
+                <button class="eleventh">Set the width attribute of the image</button>
+                <hr size="30"><br>
+            </div>
+
+            <div>
+            <p>Name: <input type="text" name="user"></p>
+            <button class="twelvth">Set the value of the input field</button>
+            </div>
+
+            
+
+
+    </div>
+
+
+    <script>
+       $( "p" ).addClass( "myClass yourClass" );
+      </script>
+</body>
+</html>
